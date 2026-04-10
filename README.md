@@ -1,5 +1,5 @@
 # Crepe Bono - Crepe Ordering Website
-![Crepe Bono](img/crepe-bono.png)
+![Crepe Bono](crepe-bono.png)
 A complete web application for ordering crepes online, featuring a shopping cart, contact form, and admin dashboard.
 
 ## Features

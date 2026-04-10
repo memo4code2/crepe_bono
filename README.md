@@ -116,6 +116,6 @@ The application auto-creates these tables:
 
 This project is for educational purposes. Modify and distribute as needed.
 
-## Contact
 
-For issues or contributions, feel free to reach out via the contact form in the app.
+
+

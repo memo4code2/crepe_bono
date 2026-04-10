@@ -1,0 +1,521 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Colors ===== */
+:root {
+    --black: #0d0d0d;
+    --white: #ffffff;
+    --yellow: #FFD700;
+    --gray: #1a1a1a;
+}
+
+/* ===== Body ===== */
+body {
+    background: var(--black);
+    color: var(--white);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--yellow);
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--yellow);
+}
+
+/* Order Button */
+.order-btn {
+    background: var(--yellow);
+    color: #000 !important;
+    padding: 8px 15px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.cart-badge {
+    display: inline-block;
+    background: #000;
+    color: var(--yellow);
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.btn.disabled,
+button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* ===== Hero ===== */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('Photos/photo1.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero span {
+    color: var(--yellow);
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--yellow);
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Sections ===== */
+section {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* ===== Cards ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--gray);
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
+
+/* ===== Active Link ===== */
+.active {
+    color: var(--yellow);
+}
+
+/* ===== Menu Page ===== */
+.menu {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.menu-title {
+    margin: 40px 0 20px;
+    font-size: 26px;
+    color: var(--yellow);
+}
+
+/* ===== Card Content ===== */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+/* ===== Button ===== */
+button {
+    padding: 8px 15px;
+    border: none;
+    background: var(--yellow);
+    color: #000;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* ===== About Page ===== *//* ===== About Layout ===== */
+.about {
+    padding: 70px 60px;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Row Layout */
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* عكس الاتجاه */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image */
+.about-img img {
+    width: 400px;
+    border-radius: 12px;
+}
+
+/* Text */
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h3 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+}
+
+.about-img img {
+    transition: 0.4s;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Contact Page ===== */
+.contact {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Form */
+.contact-form {
+    background: var(--gray);
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Info */
+.contact-info {
+    background: var(--gray);
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    color: var(--yellow);
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* ===== Cart Page ===== */
+.cart {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Items */
+.cart-items {
+    width: 400px;
+}
+
+.cart-item {
+    background: var(--gray);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cart-item h4 {
+    margin-bottom: 5px;
+}
+
+.cart-item p {
+    margin-bottom: 10px;
+}
+
+/* Quantity */
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    background: var(--yellow);
+    border: none;
+    cursor: pointer;
+}
+
+/* Remove Button */
+.remove {
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Summary */
+.cart-summary {
+    background: var(--gray);
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: left;
+}
+
+.cart-summary h3 {
+    margin-bottom: 15px;
+    color: var(--yellow);
+}
+
+.cart-summary p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* ===== Checkout Page ===== */
+.checkout {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Form */
+.checkout-form {
+    background: var(--gray);
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: left;
+}
+
+.checkout-form h3 {
+    margin-bottom: 10px;
+    color: var(--yellow);
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkout-form button {
+    width: 100%;
+}
+
+/* Summary */
+.checkout-summary {
+    background: var(--gray);
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: left;
+}
+
+.checkout-summary h3 {
+    margin-bottom: 15px;
+    color: var(--yellow);
+}
+
+..checkout-summary p {
+    margin: 8px 0;
+}
+
+.checkout-summary h4 {
+    margin-top: 15px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-table th {
+    background: #1a1a1a;
+    color: var(--yellow);
+}

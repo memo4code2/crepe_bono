@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Crepe Bono</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">Crepe <span>Bono</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin_login.php">Admin</a>
+        <a href="cart.html">Cart <span class="cart-badge" id="cart-count">0</span></a>
+    </nav>
+</header>
+
+<!-- Checkout Section -->
+<section class="checkout">
+
+    <h2>Checkout</h2>
+
+    <div class="checkout-container">
+
+        <!-- Form -->
+        <form class="checkout-form" action="process_order.php" method="POST">
+
+            <h3>Customer Information</h3>
+            
+            <input type="hidden" name="cart_data" id="cart_data">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <textarea name="address" placeholder="Address" required></textarea>
+
+            <h3>Payment Method</h3>
+
+            <label>
+                <input type="radio" name="payment" value="cash" checked>
+                Cash on Delivery
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="card">
+                Credit Card (Demo)
+            </label>
+
+            <button type="submit">Confirm Order</button>
+
+        </form>
+
+        <!-- Summary -->
+        <div class="checkout-summary">
+            <h3>Order Summary</h3>
+            <div id="checkout-summary-items"></div>
+            <hr>
+            <h4>Total: <span id="checkout-total">0 EGP</span></h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Crepe Bono</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
